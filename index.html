@@ -28,114 +28,51 @@
 
 </head>
 <body class="font-manrope">
-    <header class="max-w-screen-lg w-4/5 mx-auto">
+    <header class="lg:max-w-screen-lg lg:w-4/5 lg:mx-auto">
         
     <!-- navbar start -->
 
-        <nav> 
-            <div class="flex justify-between">
-            
-            <div class="flex
-            flex-col 
-            lg:flex-row
-            justify-between
-             pt-4">
-                <div class="flex ">
-                <button class="lg:hidden
-                inline-flex
-                justify-center
-                items-center
-                h-10 w-10
-                pt-3
-                pr-2">
-                
-                
-                
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-                  </svg>
-                  </button>
-                <h1 class="inline-flex text-2xl lg:text-4xl
-                 text-[#131318] 
-                 font-extrabold
-                 mr-10 mt-2 mb-3">
-                 Hockey<span class="text-[#FF4240]">’</span>s</h1>
-                 </div>
-                
-                <div class="flex 
-                flex-col
-                lg:flex-row
-                lg:justify-center
-                lg:items-center
-                lg:text-center
-                list-none
-                gap-4 
-                lg:gap-11
-                lg:mr-7">
-                
-                
-                    
-                        <li><a class="font-normal
-                            text-base
-                            text-[#FF4240]
-                            hover:bg-slate-400
-                            px-4 py-2
-                            ">Home</a></li>
-                        <li><a class="font-normal
-                            text-base
-                            text-[#424247]
-                            hover:bg-slate-400
-                            px-4 py-2">About</a></li>
-                        <li><a class="font-normal
-                            text-base
-                            text-[#424247]
-                            hover:bg-slate-400
-                            px-4 py-2">Pages</a></li>
-                        <li><a class="font-normal
-                            text-base
-                            text-[#424247]
-                            hover:bg-slate-400
-                            px-4 py-2">Blog</a></li>
-                        <li><a class="font-normal
-                            text-base
-                            text-[#424247]
-                            hover:bg-slate-400
-                            px-4 py-2">Contact</a></li>
-                        
-                </div>
-                
-                
-            </div>
-            <div class="flex
-             items-baseline 
-             ">
-                <i class="fa-solid fa-magnifying-glass 
-                mr-2
-                lg:mr-4
-             
-
-                "></i>
-                <button class="bg-[#FF4240]
-                text-[white] 
-                text-sm
-                
-                lg:text-base
-                px-2 py-2
-                lg:px-6 lg:py-4
-                mt-6 lg:mr-6
-                rounded-lg"
-                >Get Ticket</button>
-
-            </div>
-            </div>
-        </nav>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a class="text-base text-red-600 font-bold">Home</a></li>
+            <li><a class="text-base text-gray-800 font-normal">About</a></li>
+            <li><a class="text-base text-gray-800 font-normal">Pages</a></li>
+            <li><a class="text-base text-gray-800 font-normal">About</a></li>
+            <li><a class="text-base text-gray-800 font-normal">Contact</a></li>
+          </ul>
+        </div>
+        <a class="text-black text-xl lg:text-4xl font-extrabold">Hockey<span class="text-red-700">’</span>s</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          
+          <li><a class="text-base text-red-600 font-bold">Home</a></li>
+          <li><a class="text-base text-gray-800 font-normal">About</a></li>
+          <li><a class="text-base text-gray-800 font-normal">Pages</a></li>
+          <li><a class="text-base text-gray-800 font-normal">About</a></li>
+          <li><a class="text-base text-gray-800 font-normal">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <a class="btn text-white text-base lg:text-xl font-semibold bg-red-500">Get Ticket</a>
+      </div>
+    </div>
+           <!-- navbar end -->
+    
         <!-- Carousel with next/prev buttons -->
 
         <div class="carousel w-full">
             <!-- slide 1 -->
             <div id="slide1" class="carousel-item relative w-full">
                 <div class="relative">
-                    <img class="mt-10" src="Images/1.png">
+                    <img class="mt-10 h-3/4 rounded-2xl p-3 lg:p-0" src="Images/hockey3.jpg">
                     <div class="bg-black lg:max-w-lg p-4 lg:p-6 lg:relative mt-5 lg:-top-48 rounded-2xl lg:left-96">
                         <h3 class="text-xl lg:text-2xl
                          text-white
@@ -162,8 +99,8 @@
             <div id="slide2" class="carousel-item relative w-full">
                 <div class="relative">
                     
-                    <img class="mt-10 rounded-2xl flex" src="Images/worldcup2.jpg">
-                    <div class="bg-black max-w-lg p-4 lg:p-6 relative lg:-top-48 rounded-2xl lg:left-64 mt-4">
+                    <img class="mt-10 rounded-2xl flex h-3/4 p-3 lg:p-0" src="Images/hockey2.jpg">
+                    <div class="bg-black max-w-lg p-4 lg:p-6 relative lg:-top-48 rounded-2xl lg:left-96 mt-4">
                         <h3 class="text-xl lg:text-2xl
                          text-white
                           font-extrabold
@@ -716,10 +653,6 @@
     <p class="text-base font-medium text-gray-400 py-2">Hockeys for kids</p>
     <p class="text-base font-medium text-gray-400 py-2">Hockeys for Adult</p>
   </div>
-
-
-
-
 
 
 </div>
